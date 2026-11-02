@@ -1,0 +1,27 @@
+filters:
+  and:
+    - file.inFolder("content/-- projects")
+    - file.name != "- Project Base.base"
+views:
+  - type: table
+    name: View
+    order:
+      - file.name
+      - project_status
+      - aliases
+      - project_name
+      - lab_members
+      - collaborator(s)
+      - prereg
+      - prereg_url
+      - open_code
+      - code_repo
+      - open_data
+      - data_repo
+      - published
+      - paper_doi
+      - paper_journal
+      - concept(s)
+    sort:
+      - property: aliases
+        direction: DESC

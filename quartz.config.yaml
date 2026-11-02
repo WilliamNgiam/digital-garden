@@ -1,13 +1,13 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: Quartz 5
-  pageTitleSuffix: ""
+  pageTitle: Will's long-term working memory
+  pageTitleSuffix: " | William Ngiam"
   enableSPA: true
   enablePopovers: true
   analytics:
     provider: plausible
   locale: en-US
-  baseUrl: williamngiam.github.io/digital-garden
+  baseUrl: williamngiam.github.io/second-brain
   ignorePatterns:
     - private
     - templates
@@ -16,8 +16,8 @@ configuration:
     fontOrigin: googleFonts
     cdnCaching: true
     typography:
-      header: Schibsted Grotesk
-      body: Source Sans Pro
+      header: Outfit
+      body: Outfit
       code: IBM Plex Mono
     colors:
       lightMode:
@@ -110,6 +110,12 @@ plugins:
     order: 92
   - source: "@quartz-community/quartz-fonts"
     enabled: true
+    options:
+      useThemeFonts: false
+      fontOrigin: googleFonts
+      title: Outfit
+      header: Outfit
+      body: Outfit
   - source: "@quartz-themes/core"
     enabled: true
     options:
@@ -230,8 +236,9 @@ plugins:
     enabled: true
     options:
       links:
-        GitHub: https://github.com/jackyzha0/quartz
-        Discord Community: https://discord.gg/cRFFHYye7t
+        GitHub: https://github.com/WilliamNgiam/digital-garden
+        Personal Website: https://williamngiam.github.io
+        Bluesky: https://bsky.app/profile/williamngiam.github.io
     layout:
       position: footer
       priority: 50
@@ -246,13 +253,13 @@ plugins:
       priority: 25
       display: mobile-only
   - source: "@quartz-community/bases-page"
-    enabled: true
+    enabled: false
     options: {}
     order: 50
   - source: "@quartz-community/note-properties"
     enabled: true
     options:
-      includeAll: false
+      includeAll: true
       includedProperties:
         - description
         - tags
@@ -273,6 +280,15 @@ plugins:
       darkMode: auto
       exportPadding: 20
     order: 50
+  - source: "@quartz-themes/core"
+    enabled: true
+    options:
+      theme: "anuppuccin"
+      mode: "both"
+    order: 10
+  - source: github:quartz-community/bases-page
+    enabled: true
+    order: 10
 layout:
   groups:
     toolbar:
