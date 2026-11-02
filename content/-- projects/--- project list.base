@@ -1,10 +1,9 @@
 filters:
   and:
-    - file.inFolder("content/-- projects")
-    - file.name != "- Project Base.base"
+    - file.tags.contains("#project")
 views:
   - type: table
-    name: View
+    name: Table
     order:
       - file.name
       - project_status
@@ -22,6 +21,11 @@ views:
       - paper_doi
       - paper_journal
       - concept(s)
-    sort:
-      - property: aliases
-        direction: DESC
+      - updated
+    sort: []
+    rowHeight: medium
+  - type: cards
+    name: Cards
+    filters:
+      or:
+        - "!file.name.isEmpty()"

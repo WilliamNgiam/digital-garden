@@ -253,7 +253,7 @@ plugins:
       priority: 25
       display: mobile-only
   - source: "@quartz-community/bases-page"
-    enabled: false
+    enabled: true
     options: {}
     order: 50
   - source: "@quartz-community/note-properties"
@@ -287,7 +287,7 @@ plugins:
       mode: "both"
     order: 10
   - source: github:quartz-community/bases-page
-    enabled: true
+    enabled: false
     order: 10
 layout:
   groups:
