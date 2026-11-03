@@ -1,3 +1,48 @@
 @use "./variables.scss" as *;
 
 // put your custom CSS here!
+/* Target the search popup container */
+.search-container {
+  /* Set a semi-transparent background using rgba */
+  background-color: rgba(var(--light-rgb), 0.8) !important; 
+
+  /* Optional: Add a frosted glass blur effect behind the popup */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.search-layout {
+  background-color: rgba(243, 243, 243, 0.4) !important; /* Adjust alpha (0.4) for darker/lighter backdrop */
+}
+
+/* Force Wikilinks to have a beige background */
+a[data-slug] {
+  background-color: rgba(245, 245, 220, 0.5) !important;
+}
+
+// Targets Obsidian Bases card layout views
+// 1. Force the parent outer layout wrapper to be transparent
+.bases-cards,
+.bases-cards-container {
+  background-color: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+// 2. Force the individual inner cards to have a consistent color
+.bases-card-body,
+.bases-card-row,
+.bases-card-label,
+.bases-card {
+  background-color:rgba(245, 245, 220, 0.5) !important;
+  background-image: none !important;              // Strips dynamic gradients or image overlays
+  box-shadow: none !important;                    // Flattens the card layout depth
+  border: none !important;   // Crisp uniform divider border
+}
+
+
+// Optional: Keep text colors consistent within the cards
+.bases-card-content, .bases-card-title {
+  color: var(--dark) !important;
+}

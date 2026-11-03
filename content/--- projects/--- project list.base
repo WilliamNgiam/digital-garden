@@ -2,6 +2,17 @@ filters:
   and:
     - file.tags.contains("#project")
 views:
+  - type: cards
+    name: Cards
+    order:
+      - file.name
+      - project_status
+      - code_repo
+      - data_repo
+      - paper_doi
+      - preprint
+    cardSize: 400
+    imageAspectRatio: 0.4
   - type: table
     name: Table
     order:
@@ -24,8 +35,3 @@ views:
       - updated
     sort: []
     rowHeight: medium
-  - type: cards
-    name: Cards
-    filters:
-      or:
-        - "!file.name.isEmpty()"

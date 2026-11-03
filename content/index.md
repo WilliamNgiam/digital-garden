@@ -1,5 +1,6 @@
 ---
 title: Welcome to my public brain!
+updated: 2026-11-02
 ---
 You have discovered my [digital garden](https://fabric.so/learn/digital-garden) – a place for me to store and grow my ideas. I started this project as a small resistance to artificial intelligence; I wanted to have a space where I could put down my thinking and watch it expand and evolve as I put more into it. I also liked the idea of a public forum where my developing thoughts could be viewed by passersby, who might appreciate the ideas as they visited.
 
@@ -9,12 +10,8 @@ The organisation of this garden is somewhat hierarchical, loosely based on the *
 
 ```
 ├── 📂 concepts                # GitHub configuration and CI/CD pipelines
-│   └── 📂 workflows           # GitHub Actions workflow definitions
 ├── 📂 models                   # Configuration files (environment, database, app)
 ├── 📂 projects                 # Documentation, architecture, and user guides
-│   └── 📂 ideas                # GitHub Actions workflow definitions
-│   └── 📂 in_progress          # GitHub Actions workflow definitions
-│   └── 📂 complete
 ├── 📂 papers                   # Core application source code
 ├── 📂 talks                    # Unit, integration, and end-to-end tests
 └── index.md                    # The home page you are viewing
