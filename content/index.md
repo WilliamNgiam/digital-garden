@@ -1,6 +1,8 @@
 ---
 title: Welcome to my public brain!
 updated: 2026-11-02
+aliases:
+  - home
 ---
 You have discovered my [digital garden](https://fabric.so/learn/digital-garden) – a place for me to store and grow my ideas. I started this project as a small resistance to artificial intelligence; I wanted to have a space where I could put down my thinking and watch it expand and evolve as I put more into it. I also liked the idea of a public forum where my developing thoughts could be viewed by passersby, who might appreciate the ideas as they visited.
 
