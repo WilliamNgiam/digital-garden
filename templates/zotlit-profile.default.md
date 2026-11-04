@@ -21,12 +21,12 @@ frontmatter:
   - key: citekey
     expr: zt.citationKey
     merge: replace
-  - key: aliases
-    value: ""
   - key: concept(s)
     value: ""
   - key: project(s)
     value: ""
+  - key: aliases
+    expr: zt.citekey
 ---
 
 
