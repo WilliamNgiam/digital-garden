@@ -12,6 +12,8 @@ frontmatter:
   - key: title
     expr: zt.title
     merge: replace
+  - key: author(s)
+    expr: 'zt.authorsShort'
   - key: paper_doi
     expr: 'zt.DOI'
   - key: journal
@@ -42,7 +44,6 @@ frontmatter:
 
 {{ zt.imgLink | embed }}{{ zt.text }}
 {% if zt.comment %}
-
 {{ zt.comment }}
 {% endif %}
 {% endbq %}
